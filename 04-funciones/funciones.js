@@ -95,5 +95,31 @@ const flecha = (saldo, compra) => {
 
 console.log(flecha(100000, 7500));
 
+function saludar(nombre) {
+    alert (`Hola ${nombre}`);
+}
+
+//DOM
+let botonSaludo = document.getElementById('botonSaludo');
+
+console.log(botonSaludo);
+
+botonSaludo.style.background = 'red';
+
+console.log('=======================================================');
+
+let titulo = document.getElementById('titulo');
+
+console.log(titulo);
 
 
+
+function saludar(nombre) {
+    alert(`Hola ${nombre}`);
+    
+    titulo.innerHTML = `Hola ${nombre}`;
+    titulo.style.color = 'green';
+    titulo.style.fontFamily = 'Arial';
+    titulo.style.fontSize = '50px';
+    
+}
